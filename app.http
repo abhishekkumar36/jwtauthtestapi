@@ -1,0 +1,24 @@
+post http://localhost:8001/recruiter/signup
+Content-Type: application/json
+
+{
+    "firstName":"Rohit",
+  "lastName":"Sen",
+  "mobileNumber":"98765434567",
+  "email":"rohitsen@gmail.com",
+  "password":"rohit@sen1"
+}
+###
+post http://localhost:8001/recruiter/signin
+Content-Type : application/json
+
+{
+    "email":"rohitsen@gmail.com",
+    "password":"rohit@sen1"
+}
+
+###
+get http://localhost:8001/recruiters
+
+###
+get http://localhost:8001/jobseekers
